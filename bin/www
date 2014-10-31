@@ -1,0 +1,7 @@
+var app = require('../app');
+
+app.set('port', process.env.PORT || 4477);
+console.log('www');
+var server = app.listen(app.get('port'), function() {
+  console.log('myx-capsule :: :: Express server listening on port ' + server.address().port);
+});

@@ -1,0 +1,11 @@
+doctype
+html
+	head
+		include ./meta.jade
+	body
+		h1
+			.capsule-message !{message}
+		p
+			.capsule-error !{error.stack || error.stacktrace || ""}
+
+        
